@@ -22,7 +22,6 @@ import Footer from './components/Footer.vue';
 
 <style scoped>
 #Heading {
-  background-color: #f5f5f5;
   background-image: url('src/assets/imgs/0.jpg');
   background-repeat: no-repeat;
   background-size: cover;
