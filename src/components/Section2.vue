@@ -1,17 +1,31 @@
 <template>
-  <div class="grid grid-cols-3 gap-8 px-8 py-24">
-    <div class="grid-item">
-      <img :src="BirthdayCake" alt="Image 1">
-    </div>
-    <div class="grid-item">
-      <img :src="WeddingCake" alt="Image 2">
-    </div>
-    <div class="grid-item border border-red-400" >
-      <div class="border">
- <img :src="ChristmasCake" alt="Image 3">
-      <div class="text-4xl font-bold border ">Christmas Cake</div>
+  <div class="grid grid-cols-3 gap-8 px-8 py-12" id="section2">
+    <div class="relative">
+      <div class="overflow-hidden hover06">
+        <figure>
+           <img :src="BirthdayCake" alt="Image 3">
+        <div class="text-4xl absolute bottom-12 mx-auto w-full text-center text-white p-2 productHeads">Birthday Cake</div>
+        </figure>
+       
       </div>
-     
+    </div>
+    <div class="relative">
+      <div class="overflow-hidden hover06">
+        <figure>
+            <img :src="WeddingCake" alt="Image 3">
+        <div class="text-4xl absolute bottom-12 mx-auto w-full text-center text-white p-2 productHeads">Wedding Cake</div>
+        </figure>
+      
+      </div>
+    </div>
+    <div class="relative">
+      <div class="overflow-hidden hover06">
+        <figure>
+          <img :src="ChristmasCake" alt="Image 3">
+        <div class="text-4xl absolute bottom-12 mx-auto w-full text-center text-white p-2 productHeads">Christmas Cake</div>
+        </figure>
+        
+      </div>
     </div>
   </div>
 </template>

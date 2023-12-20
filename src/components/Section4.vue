@@ -1,6 +1,6 @@
 <template>
   <div class="grid grid-cols-4">
-    <div v-for="image in images" :key="image.id" class="image-item">
+    <div v-for="image in images" :key="image.id" class="image-item overflow-hidden">
       <img :src="image.url" alt="Image" class="image" />
   </div>
   </div>

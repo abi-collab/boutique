@@ -1,10 +1,77 @@
-body {
-  font-family: Poppins;
+@font-face { 
+  font-family: betterChange; 
+  src: url(BetterChangeDemoRegular.ttf);
 }
 
-#TitleHead {
-  font-family: dancing script;
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  font-family: Poppins;
+  background-color: antiquewhite;
+  
+}
+
+#TitleHead, .productHeads {
+  /* font-family: dancing script; */
+  font-family: betterChange;
+}
+
+img {
+  transition: transform .2s; /* Animation */
+}
+
+img:hover {
+  transform: scale(1.5);
+}
+
+/* Rotate */
+.hover06 figure img {
+		-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+}
+.hover06 figure:hover img {
+  -webkit-transform: rotate(15deg) scale(1.4);
+	transform: rotate(15deg) scale(1.4);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+a:hover {
+  font-weight: bold;
+  color: antiquewhite;
+  text-decoration: underline;
+  text-underline-offset: 0.9em;
+  
+}
+
+ul li a:hover {
+  font-weight: bold;
+  color: antiquewhite;
+  text-decoration: underline;
+  text-underline-offset: 0.9em;
+  
+}
+
+
+
+a:active {
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 0.9em;
+  
+}
+
+ul li a:active {
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 0.9em;
+  
+}
+
 
 /* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
