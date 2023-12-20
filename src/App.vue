@@ -5,10 +5,11 @@ import Section2 from './components/Section2.vue';
 import Section3 from './components/Section3.vue';
 import Section4 from './components/Section4.vue';
 import Footer from './components/Footer.vue';
+import image0 from './assets/imgs/0.jpg';
 </script>
 
 <template>
-  <div id="Heading">
+  <div id="Heading" :style="{backgroundImage: 'url(' + image0 + ')', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}">
     <Navigation />
     <Section1 />
   
@@ -20,10 +21,9 @@ import Footer from './components/Footer.vue';
   
 </template>
 
-<style scoped>
+<!-- <style scoped>
 #Heading {
-  background-image: url('src/assets/imgs/0.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(image0);
+  
 }
-</style>
+</style> -->
