@@ -8,11 +8,9 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      images: [
+<script setup>
+import { ref } from 'vue';
+     let images =  ref([
         { id: 1, url: '../assets/imgs/1.jpg' },
         { id: 2, url: '../assets/imgs/2.jpg' },
         { id: 3, url: '../assets/imgs/3.jpg' },
@@ -21,8 +19,6 @@ export default {
         { id: 2, url: '../assets/imgs/6.jpg' },
         { id: 3, url: '../assets/imgs/7.jpg' },
         { id: 4, url: '../assets/imgs/8.jpg' },
-      ],
-    };
-  },
-};
+      ]);
+
 </script>
